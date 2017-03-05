@@ -18,7 +18,7 @@ Class 	TP Rate	  FP Rate	  Precision	  Recall 	  F - Measure
 Positive	0.716	  0.284	    0.871	      0.716	    0.785
 Negative	0.894	  0.109	    0.758	      0.894	    0.819
 
-	          Actual
+Actual
 Predicted		Positive	Negative
 	Positive	358	      53
 	Negative	142	      447
@@ -29,7 +29,7 @@ Class 	TP Rate	FP Rate	Precision	Recall 	F - Measure
 Positive	0.752	0.248	0.923	0.752	0.841
 Negative	0.938	0.062	0.790	0.938	0.857
 
-	Actual
+Actual
 Predicted		Positive	Negative
 	Positive	376	31
 	Negative	124	469
@@ -41,7 +41,7 @@ As mentioned earlier, I had already counted the total word count across all revi
 2.	N- Gram Modelling
 Bag of words primarily concentrates on frequency of each word and ignore the semantic context of the texts. To overcome this issue, i tried N- gram modelling in which i created bi-grams to provide more contextual information on the movie review texts. Here, i have created one feature set similar to ‘Bag of Words’ approach explained above but using the bi-grams. For the classification, when i trained the bi-grams set on naïve Bayes classifier, i got the accuracy 85.5% which again a marginal difference from bag of words approach.
 3.	TF-IDF Modelling   
-  Both approaches mentioned above focused on the high frequency of words for the feature extraction abut completely ignored the most significant – polarity of movie review. In this approach, i calculated TF-IDF score of each word instead of frequency counts. Also, there were couple of words which were common in both positive and negative reviews and won’t contribute to the classifier. i ignored all the common words whose count was more than 50 in both positive and negative reviews. When i trained the model on the same Naïve Bayes classifier, i got 84.4% accuracy and again same as previous approaches but this time TF-IDF score was utilized instead of frequency counts in the model.
+Both approaches mentioned above focused on the high frequency of words for the feature extraction abut completely ignored the most significant – polarity of movie review. In this approach, i calculated TF-IDF score of each word instead of frequency counts. Also, there were couple of words which were common in both positive and negative reviews and won’t contribute to the classifier. i ignored all the common words whose count was more than 50 in both positive and negative reviews. When i trained the model on the same Naïve Bayes classifier, i got 84.4% accuracy and again same as previous approaches but this time TF-IDF score was utilized instead of frequency counts in the model.
  
 	
 Summary:
